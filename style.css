@@ -45,6 +45,7 @@ body {
     line-height: 1.75;
     background-color: var(--clr-primary);
     max-width: 1024px;
+    margin: 0 auto;
 }
 
 img,
@@ -113,10 +114,6 @@ p {
     margin-top: var(--space-500);
 }
 
-.content__item > *:not(:first-child) + * {
+.content__item:not(:first-of-type) > * + * {
     margin-top: var(--space-400);
-}
-
-video + .text {
-    margin-top: 0 !important;
 }
