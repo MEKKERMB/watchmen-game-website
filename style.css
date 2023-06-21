@@ -44,6 +44,7 @@ dl,
 dd {
     margin: 0;
     font-family: var(--ff-primary);
+    font-family: var(--ff-primary);
     color: var(--clr-secondary);
 }
 
@@ -76,6 +77,7 @@ h3 {
     letter-spacing: -2px;
     text-transform: uppercase;
     text-shadow: 0 0 20px black;
+    -webkit-text-stroke: 1px black;
     -webkit-text-stroke: 1px black;
 }
 
