@@ -22,11 +22,5 @@ buttons.forEach((button) => {
   button.addEventListener('mouseout', () => {
     isVideoPlaying = false;
     videoPlayer.parentNode.classList.remove('show-video');
-
-    // Delay to prevent flickering
-    isDelayActive = true;
-    setTimeout(() => {
-      isDelayActive = false;
-    }, 300);
   });
 });
