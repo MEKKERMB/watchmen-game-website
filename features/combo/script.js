@@ -5,7 +5,7 @@ let isDelayActive = false;
 
 buttons.forEach((button) => {
   button.addEventListener('mouseover', () => {
-    if (isDelayActive) return; // Ignore hover if delay is active
+    if (isDelayActive) return;
 
     const videoUrl = button.dataset.videoUrl;
 
@@ -23,10 +23,10 @@ buttons.forEach((button) => {
     isVideoPlaying = false;
     videoPlayer.parentNode.classList.remove('show-video');
 
-    // Set delay before allowing hover in again
+    // Delay to prevent flickering
     isDelayActive = true;
     setTimeout(() => {
       isDelayActive = false;
-    }, 300); // 0.3 seconds delay
+    }, 300);
   });
 });
