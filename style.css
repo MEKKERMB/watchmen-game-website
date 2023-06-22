@@ -26,6 +26,8 @@
 
     --space-400: 2.5rem;
     --space-500: 5rem;
+    --space-600: 10rem;
+    --space-700: 20rem;
 }
 
 /* ----- Reset ----- */
@@ -137,7 +139,7 @@ p {
 }
 
 .content > * + * {
-    margin-top: var(--space-500);
+    margin-top: var(--space-700);
 }
 
 .content__item:not(:first-of-type) > * + * {
@@ -147,7 +149,7 @@ p {
 .combo-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-400);
 }
 
 @media (min-width: 425px) {
@@ -193,7 +195,7 @@ p {
 .protagonists {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: var(--space-400);
 }
 
 .protagonists > * {
