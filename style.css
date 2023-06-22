@@ -93,6 +93,7 @@ h2 {
 h3 {
     font-size: var(--fs-700);
     color: var(--clr-accent-red-400);
+    text-align: center;
 }
 
 button {
@@ -189,21 +190,31 @@ p {
     background-color: var(--clr-primary-500);
 }
 
+.protagonists {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.protagonists > * {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .protagonists {
+        flex-direction: row;
+    }
+}
+
 .protagonist {
     display: flex;
     flex-direction: column;
     background-color: var(--clr-primary-500);
-    align-items: center;
 }
 
 .protagonist video {
-    width: 200px;
-    border-radius: 100vw;
-    aspect-ratio: 1;
+    width: 100%;
     object-fit: cover;
+    height: 500px;
     object-position: top;
-}
-
-.protagonist:last-of-type video {
-    object-position: left;
 }
