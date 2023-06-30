@@ -224,9 +224,16 @@ p {
 .stores {
     background-color: var(--clr-primary-500);
     display: flex;
+    flex-direction: column;
     gap: var(--space-400);
     align-items: center;
-    padding: 1rem 2rem;
+    padding: var(--space-400) 2rem;
+}
+
+@media (min-width: 1024px) {
+    .stores {
+        flex-direction: row;
+    }
 }
 
 .stores a > img {
